@@ -9,4 +9,7 @@ class Emp(models.Model):
     username = models.CharField(max_length=50)
     pw = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name
+
     
